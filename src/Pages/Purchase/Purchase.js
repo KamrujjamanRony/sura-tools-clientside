@@ -12,7 +12,7 @@ const Purchase = () => {
   const quantityRef = useRef();
   const [buttonDisabled, setButtonDisabled] = useState(false);
   useEffect(() => {
-    const url = `http://localhost:5000/tool/${id}`;
+    const url = `https://sura-tools-serverside-production.up.railway.app/tool/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setProduct(data));
@@ -66,7 +66,7 @@ const Purchase = () => {
       address: event.target.address?.value,
     };
     //send data to the server
-    const url = `http://localhost:5000/tool/${id}`;
+    const url = `https://sura-tools-serverside-production.up.railway.app/tool/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -80,7 +80,7 @@ const Purchase = () => {
       });
     // create order
     axios
-      .post("http://localhost:5000/order", order)
+      .post("https://sura-tools-serverside-production.up.railway.app/order", order)
       .then((response) => {
         const { data } = response;
         if (data.insertedId) {

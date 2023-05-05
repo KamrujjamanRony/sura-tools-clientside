@@ -7,7 +7,7 @@ const UserRow = ({ user, refetch, index }) => {
       role: 'admin'
   }
   // update user role
-  fetch(`http://localhost:5000/create-user/${email}`, {
+  fetch(`https://sura-tools-serverside-production.up.railway.app/create-user/${email}`, {
       method: "PUT",
       headers: {
         'content-type': 'application/json',

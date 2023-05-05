@@ -11,7 +11,7 @@ const MyProfile = () => {
       data: users,
       isLoading,
     } = useQuery("users", () =>
-      fetch("http://localhost:5000/users", {
+      fetch("https://sura-tools-serverside-production.up.railway.app/users", {
         method: "GET",
         headers: {
           authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -39,7 +39,7 @@ const MyProfile = () => {
         'linkedin': linkedin,
       }
       //send data to the server
-      const url = `http://localhost:5000/users/${currentUser.email}`;
+      const url = `https://sura-tools-serverside-production.up.railway.app/users/${currentUser.email}`;
       fetch(url, {
           method: 'PUT',
           headers: {

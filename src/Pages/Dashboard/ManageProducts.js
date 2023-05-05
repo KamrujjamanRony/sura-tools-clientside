@@ -10,7 +10,7 @@ const ManageProducts = () => {
       "Are you sure You want to delete this Order?"
     );
     if (proceed) {
-      const url = `http://localhost:5000/tool/${id}`;
+      const url = `https://sura-tools-serverside-production.up.railway.app/tool/${id}`;
       fetch(url, {
         method: "DELETE",
       })

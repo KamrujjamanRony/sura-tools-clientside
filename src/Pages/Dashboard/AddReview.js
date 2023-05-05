@@ -23,7 +23,7 @@ const AddReview = () => {
         ratting: data.ratting,
     }
     // send to database 
-    fetch('http://localhost:5000/review', {
+    fetch('https://sura-tools-serverside-production.up.railway.app/review', {
         method: 'POST',
         headers: {
             'content-type': 'application/json',

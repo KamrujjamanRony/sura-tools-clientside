@@ -17,7 +17,7 @@ const OrderRow = ({ index, order, setModal, refetch }) => {
         const updatedOrder = {
             shipping: 'Shipped'
         }
-        fetch(`http://localhost:5000/update-shipping/${id}`, {
+        fetch(`https://sura-tools-serverside-production.up.railway.app/update-shipping/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',

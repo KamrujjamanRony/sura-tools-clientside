@@ -5,7 +5,7 @@ import Testimonial from "./Testimonial";
 const Testimonials = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("https://sura-tools-serverside-production.up.railway.app/review")
+    fetch("https://sura-tools-serverside-kamrujjamanrony.vercel.app/review")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);

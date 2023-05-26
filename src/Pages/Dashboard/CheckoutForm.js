@@ -14,7 +14,7 @@ const CheckoutForm = ({ order }) => {
     const { _id, price, email, name } = order;
 
     useEffect(() => {
-        fetch('https://sura-tools-serverside-production.up.railway.app/create-payment-intent', {
+        fetch('https://sura-tools-serverside-kamrujjamanrony.vercel.app/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -81,7 +81,7 @@ const CheckoutForm = ({ order }) => {
                 order: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`https://sura-tools-serverside-production.up.railway.app/order/${_id}`, {
+            fetch(`https://sura-tools-serverside-kamrujjamanrony.vercel.app/order/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

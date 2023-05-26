@@ -12,7 +12,7 @@ const MyOrder = () => {
   useEffect(() => {
     const getItems = async () => {
       const email = user.email;
-      const url = `https://sura-tools-serverside-production.up.railway.app/my-order?email=${email}`;
+      const url = `https://sura-tools-serverside-kamrujjamanrony.vercel.app/my-order?email=${email}`;
       const { data } = await axios.get(url);
       setMyOrders(data);
     };
@@ -21,7 +21,7 @@ const MyOrder = () => {
   const handleOrderDelete = (id) => {
     const proceed = window.confirm("Are you sure You want to delete this Order?")
     if (proceed) {
-      const url = `https://sura-tools-serverside-production.up.railway.app/my-order/${id}`;
+      const url = `https://sura-tools-serverside-kamrujjamanrony.vercel.app/my-order/${id}`;
     fetch(url, {
       method: "DELETE",
     })

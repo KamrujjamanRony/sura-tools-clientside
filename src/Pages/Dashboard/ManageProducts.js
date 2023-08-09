@@ -10,7 +10,7 @@ const ManageProducts = () => {
       "Are you sure You want to delete this Order?"
     );
     if (proceed) {
-      const url = `https://sura-tools-serverside-kamrujjamanrony.vercel.app/tool/${id}`;
+      const url = `https://sura-tools-serverside.vercel.app/tool/${id}`;
       fetch(url, {
         method: "DELETE",
       })

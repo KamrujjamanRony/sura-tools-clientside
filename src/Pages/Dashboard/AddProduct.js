@@ -25,7 +25,7 @@ const AddProduct = () => {
         price: data.price,
     }
     // send to database 
-    fetch('https://sura-tools-serverside-kamrujjamanrony.vercel.app/tool', {
+    fetch('https://sura-tools-serverside.vercel.app/tool', {
         method: 'POST',
         headers: {
             'content-type': 'application/json',

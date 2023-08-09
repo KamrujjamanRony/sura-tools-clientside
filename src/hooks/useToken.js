@@ -6,7 +6,7 @@ const useToken = user =>{
         const email = user?.user?.email;
         const currentUser = {email: email};
         if(email){
-            fetch(`https://sura-tools-serverside-kamrujjamanrony.vercel.app/user/${email}`, {
+            fetch(`https://sura-tools-serverside.vercel.app/user/${email}`, {
                 method:'PUT',
                 headers: {
                     'content-type': 'application/json'

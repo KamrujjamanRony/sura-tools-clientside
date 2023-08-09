@@ -10,7 +10,7 @@ const stripePromise = loadStripe('pk_test_51L4gX8Ixi1otvYCrIX6B2uyTmZiqQ5FlKB6YD
 
 const Payment = () => {
     const { id } = useParams();
-    const url = `https://sura-tools-serverside-kamrujjamanrony.vercel.app/order/${id}`;
+    const url = `https://sura-tools-serverside.vercel.app/order/${id}`;
 
     const { data: order, isLoading } = useQuery(['booking', id], () => fetch(url, {
         method: 'GET',

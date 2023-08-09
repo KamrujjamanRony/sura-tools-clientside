@@ -17,7 +17,7 @@ const OrderRow = ({ index, order, setModal, refetch }) => {
         const updatedOrder = {
             shipping: 'Shipped'
         }
-        fetch(`https://sura-tools-serverside-kamrujjamanrony.vercel.app/update-shipping/${id}`, {
+        fetch(`https://sura-tools-serverside.vercel.app/update-shipping/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',
